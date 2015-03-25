@@ -1,9 +1,9 @@
 package com.nate23k.candentis.proxy;
 
 /**
- * Created by Whoa on 3/25/2015.
+ * Created on 3/25/2015.
  */
-public class CommonProxy implements IProxy
+public abstract class CommonProxy implements IProxy
 {
 
 }
