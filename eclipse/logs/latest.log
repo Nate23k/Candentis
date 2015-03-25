@@ -1,0 +1,49 @@
+[21:13:11] [main/INFO]: Setting user: Player614
+[21:13:12] [Client thread/INFO]: LWJGL Version: 2.9.1
+[21:13:21] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge
+[21:13:22] [Sound Library Loader/INFO]: Sound engine started
+[21:13:23] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[21:13:23] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[21:13:23] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge
+[21:13:23] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[21:13:24] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[21:13:24] [Sound Library Loader/INFO]: Sound engine started
+[21:13:52] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[21:13:52] [Server thread/INFO]: Generating keypair
+[21:13:52] [Server thread/INFO]: Converting map!
+[21:13:52] [Server thread/INFO]: Scanning folders...
+[21:13:52] [Server thread/INFO]: Total conversion count is 0
+[21:13:53] [Server thread/INFO]: Preparing start region for level 0
+[21:13:54] [Server thread/INFO]: Preparing spawn area: 8%
+[21:13:55] [Server thread/INFO]: Preparing spawn area: 21%
+[21:13:56] [Server thread/INFO]: Preparing spawn area: 34%
+[21:13:57] [Server thread/INFO]: Preparing spawn area: 48%
+[21:13:58] [Server thread/INFO]: Preparing spawn area: 61%
+[21:13:59] [Server thread/INFO]: Preparing spawn area: 74%
+[21:14:00] [Server thread/INFO]: Preparing spawn area: 90%
+[21:14:01] [Server thread/INFO]: Changing view distance to 12, from 10
+[21:14:01] [Server thread/INFO]: Player614[local:E:e3920283] logged in with entity id 207 at (-55.5, 64.0, 235.5)
+[21:14:01] [Server thread/INFO]: Player614 joined the game
+[21:14:04] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2397ms behind, skipping 47 tick(s)
+[21:14:12] [Client thread/INFO]: Warning: Clientside chunk ticking took 107 ms
+[21:14:12] [Client thread/INFO]: Warning: Clientside chunk ticking took 143 ms
+[21:14:12] [Client thread/INFO]: Warning: Clientside chunk ticking took 124 ms
+[21:14:13] [Client thread/INFO]: Warning: Clientside chunk ticking took 113 ms
+[21:14:13] [Client thread/INFO]: Warning: Clientside chunk ticking took 134 ms
+[21:14:13] [Client thread/INFO]: Warning: Clientside chunk ticking took 120 ms
+[21:14:13] [Client thread/INFO]: Warning: Clientside chunk ticking took 103 ms
+[21:14:19] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2195ms behind, skipping 43 tick(s)
+[21:14:21] [Client thread/INFO]: Warning: Clientside chunk ticking took 105 ms
+[21:14:30] [Server thread/INFO]: Player614 has just earned the achievement [Taking Inventory]
+[21:14:31] [Client thread/INFO]: [CHAT] Player614 has just earned the achievement [Taking Inventory]
+[21:14:33] [Server thread/INFO]: Saving and pausing game...
+[21:14:33] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[21:14:33] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[21:14:33] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[21:14:33] [Server thread/INFO]: Stopping server
+[21:14:33] [Server thread/INFO]: Saving players
+[21:14:33] [Server thread/INFO]: Saving worlds
+[21:14:33] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[21:14:34] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[21:14:34] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[21:14:40] [Client thread/INFO]: Stopping!
