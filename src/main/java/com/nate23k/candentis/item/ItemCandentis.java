@@ -28,6 +28,7 @@ public class ItemCandentis extends Item
     public String getUnlocalizedName(ItemStack itemStack)
     {
         return String.format("item.%s%s", Reference.MOD_ID.toLowerCase() + ":", getUnwrappedUnlocalizedName(super.getUnlocalizedName()));
+        // item.modid:itemname.name
     }
 
 

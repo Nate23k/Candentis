@@ -5,6 +5,7 @@ package com.nate23k.candentis;
  */
 
 import com.nate23k.candentis.handler.ConfigurationHandler;
+import com.nate23k.candentis.init.ModBlocks;
 import com.nate23k.candentis.init.ModItems;
 import com.nate23k.candentis.proxy.IProxy;
 import com.nate23k.candentis.reference.Reference;
@@ -33,6 +34,8 @@ public class Candentis
         FMLCommonHandler.instance().bus().register(new ConfigurationHandler());
 
         ModItems.init();
+
+        ModBlocks.init();
 
         LogHelper.info("Pre Initialization Complete!");
     }

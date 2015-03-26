@@ -173,6 +173,7 @@
     <dictionary name="Whoa">
       <words>
         <w>candentis</w>
+        <w>itemname</w>
         <w>resync</w>
       </words>
     </dictionary>
