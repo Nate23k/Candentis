@@ -1,47 +1,31 @@
-[00:50:01] [main/INFO]: Setting user: Player86
-[00:50:02] [Client thread/INFO]: LWJGL Version: 2.9.1
-[00:50:07] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Candentis
-[00:50:08] [Sound Library Loader/INFO]: Sound engine started
-[00:50:10] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[00:50:10] [Client thread/INFO]: Created: 256x256 textures/items-atlas
-[00:50:10] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Candentis
-[00:50:10] [Client thread/INFO]: Created: 256x256 textures/items-atlas
-[00:50:10] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[00:50:11] [Sound Library Loader/INFO]: Sound engine started
-[00:50:15] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[00:50:15] [Server thread/INFO]: Generating keypair
-[00:50:15] [Server thread/INFO]: Preparing start region for level 0
-[00:50:16] [Server thread/INFO]: Changing view distance to 12, from 10
-[00:50:21] [Server thread/INFO]: Stopping server
-[00:50:21] [Server thread/INFO]: Saving players
-[00:50:21] [Server thread/INFO]: Saving worlds
-[00:50:21] [Server thread/INFO]: Saving chunks for level 'Test'/Overworld
-[00:50:21] [Server thread/INFO]: Saving chunks for level 'Test'/Nether
-[00:50:21] [Server thread/INFO]: Saving chunks for level 'Test'/The End
-[00:50:21] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[00:50:21] [Server thread/INFO]: Generating keypair
-[00:50:22] [Server thread/INFO]: Preparing start region for level 0
-[00:50:22] [Server thread/INFO]: Changing view distance to 12, from 10
-[00:50:22] [Server thread/INFO]: Player86[local:E:44e228d0] logged in with entity id 250 at (153.5, 56.0, 2063.5)
-[00:50:22] [Server thread/INFO]: Player86 joined the game
-[00:50:31] [Server thread/INFO]: Player86 has just earned the achievement [Taking Inventory]
-[00:50:31] [Client thread/INFO]: [CHAT] Player86 has just earned the achievement [Taking Inventory]
-[00:50:38] [Server thread/INFO]: [Player86: Given [Light Infused Block] * 1 to Player86]
-[00:50:38] [Client thread/INFO]: [CHAT] Given [Light Infused Block] * 1 to Player86
-[00:50:50] [Server thread/INFO]: [Player86: Given [Glowstone] * 1 to Player86]
-[00:50:50] [Client thread/INFO]: [CHAT] Given [Glowstone] * 1 to Player86
-[00:51:05] [Server thread/INFO]: [Player86: Given [Torch] * 1 to Player86]
-[00:51:05] [Client thread/INFO]: [CHAT] Given [Torch] * 1 to Player86
-[00:51:13] [Server thread/INFO]: [Player86: Set own game mode to Creative Mode]
-[00:51:13] [Client thread/INFO]: [CHAT] Your game mode has been updated
-[00:52:08] [Server thread/INFO]: Saving and pausing game...
-[00:52:08] [Server thread/INFO]: Saving chunks for level 'Test'/Overworld
-[00:52:08] [Server thread/INFO]: Saving chunks for level 'Test'/Nether
-[00:52:08] [Server thread/INFO]: Saving chunks for level 'Test'/The End
-[00:52:09] [Server thread/INFO]: Stopping server
-[00:52:09] [Server thread/INFO]: Saving players
-[00:52:09] [Server thread/INFO]: Saving worlds
-[00:52:09] [Server thread/INFO]: Saving chunks for level 'Test'/Overworld
-[00:52:09] [Server thread/INFO]: Saving chunks for level 'Test'/Nether
-[00:52:09] [Server thread/INFO]: Saving chunks for level 'Test'/The End
-[00:52:13] [Client thread/INFO]: Stopping!
+[15:16:48] [main/INFO]: Setting user: Player896
+[15:16:49] [Client thread/INFO]: LWJGL Version: 2.9.1
+[15:16:55] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Candentis
+[15:16:56] [Sound Library Loader/INFO]: Sound engine started
+[15:16:57] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[15:16:57] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[15:16:57] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Candentis
+[15:16:57] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[15:16:58] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[15:16:59] [Sound Library Loader/INFO]: Sound engine started
+[15:17:05] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[15:17:05] [Server thread/INFO]: Generating keypair
+[15:17:05] [Server thread/INFO]: Preparing start region for level 0
+[15:17:06] [Server thread/INFO]: Changing view distance to 12, from 10
+[15:17:07] [Server thread/INFO]: Player896[local:E:e16e505e] logged in with entity id 122 at (139.25180982754193, 56.0, 2100.295102968207)
+[15:17:07] [Server thread/INFO]: Player896 joined the game
+[15:17:08] [Server thread/INFO]: Saving and pausing game...
+[15:17:08] [Server thread/INFO]: Saving chunks for level 'Test'/Overworld
+[15:17:08] [Server thread/INFO]: Saving chunks for level 'Test'/Nether
+[15:17:08] [Server thread/INFO]: Saving chunks for level 'Test'/The End
+[15:18:52] [Server thread/INFO]: Saving and pausing game...
+[15:18:52] [Server thread/INFO]: Saving chunks for level 'Test'/Overworld
+[15:18:52] [Server thread/INFO]: Saving chunks for level 'Test'/Nether
+[15:18:52] [Server thread/INFO]: Saving chunks for level 'Test'/The End
+[15:18:53] [Server thread/INFO]: Stopping server
+[15:18:53] [Server thread/INFO]: Saving players
+[15:18:53] [Server thread/INFO]: Saving worlds
+[15:18:53] [Server thread/INFO]: Saving chunks for level 'Test'/Overworld
+[15:18:53] [Server thread/INFO]: Saving chunks for level 'Test'/Nether
+[15:18:53] [Server thread/INFO]: Saving chunks for level 'Test'/The End
+[15:18:55] [Client thread/INFO]: Stopping!

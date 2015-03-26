@@ -7,6 +7,7 @@ package com.nate23k.candentis;
 import com.nate23k.candentis.handler.ConfigurationHandler;
 import com.nate23k.candentis.init.ModBlocks;
 import com.nate23k.candentis.init.ModItems;
+import com.nate23k.candentis.init.Recipes;
 import com.nate23k.candentis.proxy.IProxy;
 import com.nate23k.candentis.reference.Reference;
 import com.nate23k.candentis.utility.LogHelper;
@@ -43,6 +44,8 @@ public class Candentis
     @Mod.EventHandler
     public void init(FMLInitializationEvent event)
     {
+        Recipes.init();
+
         LogHelper.info("Initialization Complete!");
     }
 
