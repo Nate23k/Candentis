@@ -1,11 +1,35 @@
-[18:11:48] [main/INFO]: Setting user: Player335
-[18:11:50] [Client thread/INFO]: LWJGL Version: 2.9.1
-[18:11:55] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Candentis
-[18:11:56] [Sound Library Loader/INFO]: Sound engine started
-[18:11:58] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[18:11:58] [Client thread/INFO]: Created: 256x256 textures/items-atlas
-[18:11:58] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Candentis
-[18:11:58] [Client thread/INFO]: Created: 256x256 textures/items-atlas
-[18:11:58] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[18:11:59] [Sound Library Loader/INFO]: Sound engine started
-[18:12:35] [Client thread/INFO]: Stopping!
+[20:39:46] [main/INFO]: Setting user: Player690
+[20:39:47] [Client thread/INFO]: LWJGL Version: 2.9.1
+[20:39:53] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Candentis
+[20:39:54] [Sound Library Loader/INFO]: Sound engine started
+[20:39:55] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[20:39:55] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[20:39:55] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Candentis
+[20:39:55] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[20:39:56] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[20:39:57] [Sound Library Loader/INFO]: Sound engine started
+[20:40:03] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[20:40:03] [Server thread/INFO]: Generating keypair
+[20:40:03] [Server thread/INFO]: Preparing start region for level 0
+[20:40:04] [Server thread/INFO]: Preparing spawn area: 96%
+[20:40:04] [Server thread/INFO]: Changing view distance to 12, from 10
+[20:40:05] [Server thread/INFO]: Player690[local:E:5f6ca941] logged in with entity id 403 at (-62.41438268515044, 64.0, 223.80767744572714)
+[20:40:05] [Server thread/INFO]: Player690 joined the game
+[20:40:24] [Server thread/INFO]: Player690 has just earned the achievement [Taking Inventory]
+[20:40:24] [Client thread/INFO]: [CHAT] Player690 has just earned the achievement [Taking Inventory]
+[20:40:28] [Client thread/INFO]: [CHAT] You do not have permission to use this command
+[20:40:29] [Server thread/INFO]: Saving and pausing game...
+[20:40:29] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[20:40:30] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[20:40:30] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[20:40:31] [Client thread/INFO]: Started on 53391
+[20:40:31] [Client thread/INFO]: [CHAT] Local game hosted on port 53391
+[20:40:34] [Server thread/INFO]: [Player690: Set own game mode to Creative Mode]
+[20:40:34] [Client thread/INFO]: [CHAT] Your game mode has been updated
+[20:41:55] [Server thread/INFO]: Stopping server
+[20:41:55] [Server thread/INFO]: Saving players
+[20:41:55] [Server thread/INFO]: Saving worlds
+[20:41:55] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[20:41:55] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[20:41:55] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[20:41:56] [Client thread/INFO]: Stopping!

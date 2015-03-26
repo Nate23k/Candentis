@@ -5,6 +5,7 @@ package com.nate23k.candentis;
  */
 
 import com.nate23k.candentis.handler.ConfigurationHandler;
+import com.nate23k.candentis.init.ModItems;
 import com.nate23k.candentis.proxy.IProxy;
 import com.nate23k.candentis.reference.Reference;
 import com.nate23k.candentis.utility.LogHelper;
@@ -30,6 +31,9 @@ public class Candentis
     {
         ConfigurationHandler.init(event.getSuggestedConfigurationFile());
         FMLCommonHandler.instance().bus().register(new ConfigurationHandler());
+
+        ModItems.init();
+
         LogHelper.info("Pre Initialization Complete!");
     }
 
