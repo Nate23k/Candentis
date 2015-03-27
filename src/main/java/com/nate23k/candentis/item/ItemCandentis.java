@@ -1,5 +1,6 @@
 package com.nate23k.candentis.item;
 
+import com.nate23k.candentis.creativetab.CreativeTabCandentis;
 import com.nate23k.candentis.reference.Reference;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -16,6 +17,7 @@ public class ItemCandentis extends Item
     public ItemCandentis()
     {
         super();
+        this.setCreativeTab(CreativeTabCandentis.Candentis_Tab);
     }
 
     @Override

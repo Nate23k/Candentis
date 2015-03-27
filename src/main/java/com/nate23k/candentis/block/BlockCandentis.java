@@ -1,5 +1,6 @@
 package com.nate23k.candentis.block;
 
+import com.nate23k.candentis.creativetab.CreativeTabCandentis;
 import com.nate23k.candentis.reference.Reference;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -15,6 +16,7 @@ public class BlockCandentis extends Block
     public BlockCandentis(Material material)
     {
         super(material);
+        this.setCreativeTab(CreativeTabCandentis.Candentis_Tab);
     }
 
     public BlockCandentis()

@@ -1,2 +1,8 @@
-item.candentis:lightInfusedIngot.name=Light Infused Ingot
-tile.candentis:lightInfusedBlock.name=Light Infused Block
+#items
+item.candentis:lightInfusedIronIngot.name=Light Infused Iron Ingot
+item.candentis:lightInfusedIronSword.name=Light Infused Iron Sword
+item.candentis:lightInfusedIronPickaxe.name=Light Infused Iron Pickaxe
+
+#blocks
+tile.candentis:lightInfusedIronBlock.name=Light Infused Iron Block
+itemGroup.candentis=Candentis

@@ -1,7 +1,7 @@
 package com.nate23k.candentis.init;
 
 import com.nate23k.candentis.block.BlockCandentis;
-import com.nate23k.candentis.block.BlockLightInfusedBlock;
+import com.nate23k.candentis.block.BlockLightInfusedIronBlock;
 import com.nate23k.candentis.reference.Reference;
 import cpw.mods.fml.common.registry.GameRegistry;
 
@@ -12,10 +12,12 @@ import cpw.mods.fml.common.registry.GameRegistry;
 @GameRegistry.ObjectHolder(Reference.MOD_ID)
 public class ModBlocks
 {
-    public static final BlockCandentis lightInfusedBlock = new BlockLightInfusedBlock();
+    //List of Blocks
+    public static final BlockCandentis lightInfusedIronBlock = new BlockLightInfusedIronBlock();
 
+    // Initializes the blocks
     public static void init()
     {
-        GameRegistry.registerBlock(lightInfusedBlock, "lightInfusedBlock");
+        GameRegistry.registerBlock(lightInfusedIronBlock, "lightInfusedBlock");
     }
 }
