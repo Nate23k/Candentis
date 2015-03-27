@@ -1,0 +1,113 @@
+---- Minecraft Crash Report ----
+// Who set us up the TNT?
+
+Time: 3/27/15 12:15 PM
+Description: Unexpected error
+
+java.lang.NullPointerException: Unexpected error
+	at cpw.mods.fml.common.network.NetworkRegistry.getLocalGuiContainer(NetworkRegistry.java:263)
+	at cpw.mods.fml.common.network.internal.FMLNetworkHandler.openGui(FMLNetworkHandler.java:93)
+	at net.minecraft.entity.player.EntityPlayer.openGui(EntityPlayer.java:2501)
+	at com.nate23k.candentis.item.ItemLightInfusedPouch.onItemRightClick(ItemLightInfusedPouch.java:24)
+	at net.minecraft.item.ItemStack.useItemRightClick(ItemStack.java:164)
+	at net.minecraft.client.multiplayer.PlayerControllerMP.sendUseItem(PlayerControllerMP.java:430)
+	at net.minecraft.client.Minecraft.func_147121_ag(Minecraft.java:1546)
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:2033)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1028)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:951)
+	at net.minecraft.client.main.Main.main(Main.java:164)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source)
+	at GradleStart.main(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at cpw.mods.fml.common.network.NetworkRegistry.getLocalGuiContainer(NetworkRegistry.java:263)
+	at cpw.mods.fml.common.network.internal.FMLNetworkHandler.openGui(FMLNetworkHandler.java:93)
+	at net.minecraft.entity.player.EntityPlayer.openGui(EntityPlayer.java:2501)
+	at com.nate23k.candentis.item.ItemLightInfusedPouch.onItemRightClick(ItemLightInfusedPouch.java:24)
+	at net.minecraft.item.ItemStack.useItemRightClick(ItemStack.java:164)
+	at net.minecraft.client.multiplayer.PlayerControllerMP.sendUseItem(PlayerControllerMP.java:430)
+	at net.minecraft.client.Minecraft.func_147121_ag(Minecraft.java:1546)
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 1 total; [EntityClientPlayerMP['Player537'/142, l='MpServer', x=134.24, y=57.62, z=2066.30]]
+	Chunk stats: MultiplayerChunkCache: 621, 621
+	Level seed: 0
+	Level generator: ID 01 - flat, ver 0. Features enabled: false
+	Level generator options: 
+	Level spawn location: World: (145,4,2070), Chunk: (at 1,0,6 in 9,129; contains blocks 144,0,2064 to 159,255,2079), Region: (0,4; contains chunks 0,128 to 31,159, blocks 0,0,2048 to 511,255,2559)
+	Level time: 39834 game time, 6000 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: false
+	Forced entities: 41 total; [EntityZombie['Zombie'/68, l='MpServer', x=57.06, y=38.00, z=2105.66], EntityZombie['Zombie'/69, l='MpServer', x=60.95, y=30.00, z=2107.54], EntityCreeper['Creeper'/71, l='MpServer', x=61.50, y=37.00, z=2096.50], EntityCreeper['Creeper'/64, l='MpServer', x=55.50, y=30.00, z=2104.50], EntityCreeper['Creeper'/65, l='MpServer', x=60.13, y=30.00, z=2107.56], EntityClientPlayerMP['Player537'/142, l='MpServer', x=134.24, y=57.62, z=2066.30], EntityBat['Bat'/77, l='MpServer', x=63.75, y=38.00, z=2107.94], EntityBat['Bat'/78, l='MpServer', x=66.16, y=38.08, z=2107.34], EntityBat['Bat'/79, l='MpServer', x=61.71, y=38.83, z=2106.30], EntityCreeper['Creeper'/72, l='MpServer', x=56.50, y=37.00, z=2101.50], EntityBat['Bat'/74, l='MpServer', x=57.60, y=38.85, z=2105.25], EntityBat['Bat'/75, l='MpServer', x=58.13, y=38.10, z=2103.75], EntityZombie['Zombie'/85, l='MpServer', x=73.13, y=30.00, z=2084.31], EntityZombie['Zombie'/84, l='MpServer', x=69.50, y=30.00, z=2091.50], EntityZombie['Zombie'/87, l='MpServer', x=66.69, y=30.00, z=2091.16], EntityZombie['Zombie'/86, l='MpServer', x=70.50, y=30.00, z=2087.50], EntityBat['Bat'/80, l='MpServer', x=62.56, y=34.10, z=2130.13], EntitySlime['Slime'/83, l='MpServer', x=65.22, y=30.00, z=2093.78], EntityMinecartChest['entity.MinecartChest.name'/93, l='MpServer', x=72.50, y=29.34, z=2143.34], EntityBat['Bat'/92, l='MpServer', x=64.53, y=30.10, z=2121.13], EntityCreeper['Creeper'/95, l='MpServer', x=92.75, y=23.00, z=2067.94], EntitySkeleton['Skeleton'/94, l='MpServer', x=70.44, y=29.00, z=2137.88], EntityZombie['Zombie'/89, l='MpServer', x=66.41, y=30.00, z=2092.03], EntityZombie['Zombie'/88, l='MpServer', x=71.50, y=30.00, z=2086.50], EntitySkeleton['Skeleton'/91, l='MpServer', x=64.63, y=29.00, z=2120.13], EntityBat['Bat'/90, l='MpServer', x=66.22, y=31.85, z=2092.21], EntitySkeleton['Skeleton'/102, l='MpServer', x=87.34, y=28.00, z=2147.09], EntitySkeleton['Skeleton'/100, l='MpServer', x=85.91, y=28.00, z=2141.50], EntityCreeper['Creeper'/98, l='MpServer', x=84.94, y=22.00, z=2087.47], EntitySkeleton['Skeleton'/99, l='MpServer', x=86.56, y=28.00, z=2133.84], EntityCreeper['Creeper'/96, l='MpServer', x=87.47, y=22.00, z=2087.44], EntityCreeper['Creeper'/97, l='MpServer', x=92.06, y=22.00, z=2087.59], EntitySpider['Spider'/104, l='MpServer', x=109.50, y=28.00, z=2119.50], EntityBat['Bat'/105, l='MpServer', x=109.50, y=28.06, z=2118.50], EntityCreeper['Creeper'/55, l='MpServer', x=60.69, y=24.00, z=2089.56], EntityCreeper['Creeper'/59, l='MpServer', x=60.50, y=37.00, z=2094.50], EntityCreeper['Creeper'/58, l='MpServer', x=55.50, y=25.00, z=2095.50], EntitySkeleton['Skeleton'/57, l='MpServer', x=55.50, y=25.00, z=2094.50], EntityZombie['Zombie'/56, l='MpServer', x=55.50, y=25.00, z=2093.50], EntitySkeleton['Skeleton'/62, l='MpServer', x=56.50, y=25.00, z=2097.50], EntityCreeper['Creeper'/60, l='MpServer', x=56.56, y=26.00, z=2099.94]]
+	Retry entities: 0 total; []
+	Server brand: fml,forge
+	Server type: Integrated singleplayer server
+Stacktrace:
+	at net.minecraft.client.multiplayer.WorldClient.addWorldInfoToCrashReport(WorldClient.java:415)
+	at net.minecraft.client.Minecraft.addGraphicsAndWorldToCrashReport(Minecraft.java:2555)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:980)
+	at net.minecraft.client.main.Main.main(Main.java:164)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source)
+	at GradleStart.main(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.7.10
+	Operating System: Windows 7 (amd64) version 6.1
+	Java Version: 1.7.0_75, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 723961992 bytes (690 MB) / 1037959168 bytes (989 MB) up to 1037959168 bytes (989 MB)
+	JVM Flags: 3 total; -Xincgc -Xmx1024M -Xms1024M
+	AABB Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP v9.05 FML v7.10.85.1291 Minecraft Forge 10.13.2.1291 4 mods loaded, 4 mods active
+	mcp{9.05} [Minecraft Coder Pack] (minecraft.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	FML{7.10.85.1291} [Forge Mod Loader] (forgeSrc-1.7.10-10.13.2.1291.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	Forge{10.13.2.1291} [Minecraft Forge] (forgeSrc-1.7.10-10.13.2.1291.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	Candentis{1.7.10-1.0} [Candentis] (Candentis) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	Launched Version: 1.7.10
+	LWJGL: 2.9.1
+	OpenGL: AMD Radeon HD 7900 Series GL version 4.4.13283 Compatibility Profile Context 14.501.1003.0, ATI Technologies Inc.
+	GL Caps: Using GL 1.3 multitexturing.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Anisotropic filtering is supported and maximum anisotropy is 16.
+Shaders are available because OpenGL 2.1 is supported.
+
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
+	Type: Client (map_client.txt)
+	Resource Packs: []
+	Current Language: English (US)
+	Profiler Position: N/A (disabled)
+	Vec3 Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	Anisotropic Filtering: Off (1)

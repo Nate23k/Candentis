@@ -22,9 +22,13 @@ public class ModItems
     // List of Pickaxes
     public static final ItemCandentisPickaxe lightInfusedIronPickaxe = new ItemLightInfusedIronPickaxe(LIGHTINFUSEDIRON);
 
+    // List of Bags
+    public static final ItemAlchemicalBag alchemicalBag = new ItemAlchemicalBag();
+
     // Initializes the items
     public static void init()
     {
+        GameRegistry.registerItem(alchemicalBag, "alchemicalBag");
         GameRegistry.registerItem(lightInfusedIronIngot, "lightInfusedIngot");
         GameRegistry.registerItem(lightInfusedIronSword, "lightInfusedIronSword");
         GameRegistry.registerItem(lightInfusedIronPickaxe, "lightInfusedIronPickaxe");

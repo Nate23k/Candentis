@@ -5,6 +5,7 @@ package com.nate23k.candentis;
  */
 
 import com.nate23k.candentis.handler.ConfigurationHandler;
+import com.nate23k.candentis.handler.GuiHandler;
 import com.nate23k.candentis.init.ModBlocks;
 import com.nate23k.candentis.init.ModItems;
 import com.nate23k.candentis.init.Recipes;
@@ -17,6 +18,7 @@ import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.network.NetworkRegistry;
 
 @Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION, guiFactory = Reference.GUI_FACTORY_CLASS)
 public class Candentis
@@ -44,7 +46,9 @@ public class Candentis
     @Mod.EventHandler
     public void init(FMLInitializationEvent event)
     {
-        Recipes.init();
+        NetworkRegistry.INSTANCE.registerGuiHandler(instance, new GuiHandler());
+
+                Recipes.init();
 
         LogHelper.info("Initialization Complete!");
     }

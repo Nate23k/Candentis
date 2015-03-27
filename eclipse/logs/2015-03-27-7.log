@@ -1,0 +1,29 @@
+[16:26:48] [main/INFO]: Setting user: Player124
+[16:26:49] [Client thread/INFO]: LWJGL Version: 2.9.1
+[16:26:54] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Candentis
+[16:26:55] [Sound Library Loader/INFO]: Sound engine started
+[16:26:57] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[16:26:57] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[16:26:57] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Candentis
+[16:26:57] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[16:26:57] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[16:26:58] [Sound Library Loader/INFO]: Sound engine started
+[16:27:02] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[16:27:02] [Server thread/INFO]: Generating keypair
+[16:27:02] [Server thread/INFO]: Preparing start region for level 0
+[16:27:03] [Server thread/INFO]: Changing view distance to 12, from 10
+[16:27:04] [Server thread/INFO]: Player124[local:E:78dbecc7] logged in with entity id 217 at (168.5982317160414, 56.0, 2212.1475530045327)
+[16:27:04] [Server thread/INFO]: Player124 joined the game
+[16:27:12] [Server thread/INFO]: Player124 has just earned the achievement [Taking Inventory]
+[16:27:12] [Client thread/INFO]: [CHAT] Player124 has just earned the achievement [Taking Inventory]
+[16:27:20] [Client thread/INFO]: [CHAT] misc.candentis:owner-set-to-self
+[16:28:19] [Server thread/INFO]: Saving and pausing game...
+[16:28:19] [Server thread/INFO]: Saving chunks for level 'Test'/Overworld
+[16:28:19] [Server thread/INFO]: Saving chunks for level 'Test'/Nether
+[16:28:19] [Server thread/INFO]: Saving chunks for level 'Test'/The End
+[16:28:19] [Server thread/INFO]: Stopping server
+[16:28:19] [Server thread/INFO]: Saving players
+[16:28:19] [Server thread/INFO]: Saving worlds
+[16:28:19] [Server thread/INFO]: Saving chunks for level 'Test'/Overworld
+[16:28:19] [Server thread/INFO]: Saving chunks for level 'Test'/Nether
+[16:28:19] [Server thread/INFO]: Saving chunks for level 'Test'/The End

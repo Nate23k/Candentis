@@ -6,6 +6,7 @@ package com.nate23k.candentis.reference;
 public class Reference
 {
     public static final String MOD_ID = "Candentis";
+    public static final String LOWERCASE_MOD_ID = MOD_ID.toLowerCase();
     public static final String MOD_NAME = "Candentis";
     public static final String VERSION = "1.7.10-1.0";
     public static final String CLIENT_PROXY_CLASS = "com.nate23k.candentis.proxy.ClientProxy";
