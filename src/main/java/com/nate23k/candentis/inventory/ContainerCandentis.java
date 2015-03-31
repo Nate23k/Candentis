@@ -7,7 +7,7 @@ import net.minecraft.inventory.Slot;
 import net.minecraft.item.ItemStack;
 
 /**
- * Created by Whoa on 3/27/2015.
+ * Created on 3/27/2015.
  */
 
 public abstract class ContainerCandentis extends Container {

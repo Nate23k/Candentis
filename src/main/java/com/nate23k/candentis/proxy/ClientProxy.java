@@ -5,4 +5,8 @@ package com.nate23k.candentis.proxy;
  */
 public class ClientProxy extends CommonProxy
 {
+    public void registerProxies()
+    {
+
+    }
 }

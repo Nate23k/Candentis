@@ -1,7 +1,7 @@
 package com.nate23k.candentis.client.gui.inventory;
 
-import com.nate23k.candentis.inventory.ContainerAlchemicalBag;
-import com.nate23k.candentis.inventory.InventoryAlchemicalBag;
+import com.nate23k.candentis.inventory.ContainerLightInfusedPouch;
+import com.nate23k.candentis.inventory.InventoryLightInfusedPouch;
 import com.nate23k.candentis.reference.Colors;
 import com.nate23k.candentis.reference.Names;
 import com.nate23k.candentis.reference.Textures;
@@ -19,12 +19,12 @@ import org.lwjgl.opengl.GL11;
  */
 
 @SideOnly(Side.CLIENT)
-public class GuiAlchemicalBag extends GuiContainer {
+public class GuiLightInfusedPouch extends GuiContainer {
     private final ItemStack parentItemStack;
-    private final InventoryAlchemicalBag inventoryAlchemicalBag;
+    private final InventoryLightInfusedPouch inventoryAlchemicalBag;
 
-    public GuiAlchemicalBag(EntityPlayer entityPlayer, InventoryAlchemicalBag inventoryAlchemicalBag) {
-        super(new ContainerAlchemicalBag(entityPlayer, inventoryAlchemicalBag));
+    public GuiLightInfusedPouch(EntityPlayer entityPlayer, InventoryLightInfusedPouch inventoryAlchemicalBag) {
+        super(new ContainerLightInfusedPouch(entityPlayer, inventoryAlchemicalBag));
         this.parentItemStack = inventoryAlchemicalBag.parentItemStack;
         this.inventoryAlchemicalBag = inventoryAlchemicalBag;
         if (this.parentItemStack.getItemDamage() == 0) {
@@ -51,11 +51,11 @@ public class GuiAlchemicalBag extends GuiContainer {
     protected void drawGuiContainerBackgroundLayer(float opacity, int x, int y) {
         GL11.glColor4f(1.0F, 1.0F, 1.0F, 1.0F);
         if (this.parentItemStack.getItemDamage() == 0) {
-            this.mc.getTextureManager().bindTexture(Textures.Gui.ALCHEMICAL_BAG_SMALL);
+            this.mc.getTextureManager().bindTexture(Textures.Gui.LIGHT_INFUSED_POUCH_SMALL);
         } else if (this.parentItemStack.getItemDamage() == 1) {
-            this.mc.getTextureManager().bindTexture(Textures.Gui.ALCHEMICAL_BAG_MEDIUM);
+            this.mc.getTextureManager().bindTexture(Textures.Gui.LIGHT_INFUSED_POUCH_MEDIUM);
         } else if (this.parentItemStack.getItemDamage() == 2) {
-            this.mc.getTextureManager().bindTexture(Textures.Gui.ALCHEMICAL_BAG_LARGE);
+            this.mc.getTextureManager().bindTexture(Textures.Gui.LIGHT_INFUSED_POUCH_LARGE);
         }
         int xStart = (width - xSize) / 2;
         int yStart = (height - ySize) / 2;
@@ -68,8 +68,8 @@ public class GuiAlchemicalBag extends GuiContainer {
         if (mc.thePlayer != null) {
             for (ItemStack itemStack : mc.thePlayer.inventory.mainInventory) {
                 if (itemStack != null) {
-                    if (NBTHelper.hasTag(itemStack, Names.NBT.ALCHEMICAL_BAG_GUI_OPEN)) {
-                        NBTHelper.removeTag(itemStack, Names.NBT.ALCHEMICAL_BAG_GUI_OPEN);
+                    if (NBTHelper.hasTag(itemStack, Names.NBT.LIGHT_INFUSED_POUCH_GUI_OPEN)) {
+                        NBTHelper.removeTag(itemStack, Names.NBT.LIGHT_INFUSED_POUCH_GUI_OPEN);
                     }
                 }
             }

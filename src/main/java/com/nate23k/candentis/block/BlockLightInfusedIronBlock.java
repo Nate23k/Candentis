@@ -1,6 +1,6 @@
 package com.nate23k.candentis.block;
 
-import com.nate23k.candentis.creativetab.CreativeTabCandentis;
+import net.minecraft.block.material.Material;
 
 /**
  * Created on 3/26/2015.
@@ -9,7 +9,7 @@ public class BlockLightInfusedIronBlock extends BlockCandentis
 {
     public BlockLightInfusedIronBlock()
     {
-        super();
+        super(Material.iron);
         this.setBlockName("lightInfusedIronBlock");
         this.setBlockTextureName("lightInfusedIronBlock");
         this.setHardness(5.0F);

@@ -14,8 +14,8 @@ public final class Textures
     public static final class Gui
     {
         protected static final String GUI_TEXTURE_LOCATION = "textures/gui/";
-        public static final ResourceLocation ALCHEMICAL_BAG_SMALL = ResourceLocationHelper.getResourceLocation(GUI_TEXTURE_LOCATION + "alchemicalBag_small.png");
-        public static final ResourceLocation ALCHEMICAL_BAG_MEDIUM = ResourceLocationHelper.getResourceLocation(GUI_TEXTURE_LOCATION + "alchemicalBag_medium.png");
-        public static final ResourceLocation ALCHEMICAL_BAG_LARGE = ResourceLocationHelper.getResourceLocation(GUI_TEXTURE_LOCATION + "alchemicalBag_large.png");
+        public static final ResourceLocation LIGHT_INFUSED_POUCH_SMALL = ResourceLocationHelper.getResourceLocation(GUI_TEXTURE_LOCATION + "lightInfusedPouch_small.png");
+        public static final ResourceLocation LIGHT_INFUSED_POUCH_MEDIUM = ResourceLocationHelper.getResourceLocation(GUI_TEXTURE_LOCATION + "lightInfusedPouch_medium.png");
+        public static final ResourceLocation LIGHT_INFUSED_POUCH_LARGE = ResourceLocationHelper.getResourceLocation(GUI_TEXTURE_LOCATION + "lightInfusedPouch_large.png");
     }
 }

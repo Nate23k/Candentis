@@ -8,6 +8,7 @@ import com.nate23k.candentis.handler.ConfigurationHandler;
 import com.nate23k.candentis.handler.GuiHandler;
 import com.nate23k.candentis.init.ModBlocks;
 import com.nate23k.candentis.init.ModItems;
+import com.nate23k.candentis.init.ModTileEntity;
 import com.nate23k.candentis.init.Recipes;
 import com.nate23k.candentis.proxy.IProxy;
 import com.nate23k.candentis.reference.Reference;
@@ -48,7 +49,11 @@ public class Candentis
     {
         NetworkRegistry.INSTANCE.registerGuiHandler(instance, new GuiHandler());
 
-                Recipes.init();
+        Recipes.init();
+
+        ModTileEntity.init();
+
+        proxy.registerProxies();
 
         LogHelper.info("Initialization Complete!");
     }

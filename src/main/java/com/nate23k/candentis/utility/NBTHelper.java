@@ -7,9 +7,9 @@ import net.minecraft.nbt.NBTTagList;
 import java.util.UUID;
 public class NBTHelper {
     public static void clearStatefulNBTTags(ItemStack itemStack) {
-        if (NBTHelper.hasTag(itemStack, Names.NBT.ALCHEMICAL_BAG_GUI_OPEN))
+        if (NBTHelper.hasTag(itemStack, Names.NBT.LIGHT_INFUSED_POUCH_GUI_OPEN))
         {
-            NBTHelper.removeTag(itemStack, Names.NBT.ALCHEMICAL_BAG_GUI_OPEN);
+            NBTHelper.removeTag(itemStack, Names.NBT.LIGHT_INFUSED_POUCH_GUI_OPEN);
         }
     }
 

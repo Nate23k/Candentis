@@ -15,20 +15,20 @@ import java.util.UUID;
  * Created on 3/27/2015.
  */
 
-public class InventoryAlchemicalBag implements IInventory, INBTTaggable {
+public class InventoryLightInfusedPouch implements IInventory, INBTTaggable {
     public ItemStack parentItemStack;
     protected ItemStack[] inventory;
     protected String customName;
 
-    public InventoryAlchemicalBag(ItemStack itemStack) {
+    public InventoryLightInfusedPouch(ItemStack itemStack) {
         parentItemStack = itemStack;
         int size;
         if (itemStack.getItemDamage() == 1) {
-            size = ContainerAlchemicalBag.MEDIUM_BAG_INVENTORY_ROWS * ContainerAlchemicalBag.MEDIUM_BAG_INVENTORY_COLUMNS;
+            size = ContainerLightInfusedPouch.MEDIUM_BAG_INVENTORY_ROWS * ContainerLightInfusedPouch.MEDIUM_BAG_INVENTORY_COLUMNS;
         } else if (itemStack.getItemDamage() == 2) {
-            size = ContainerAlchemicalBag.LARGE_BAG_INVENTORY_ROWS * ContainerAlchemicalBag.LARGE_BAG_INVENTORY_COLUMNS;
+            size = ContainerLightInfusedPouch.LARGE_BAG_INVENTORY_ROWS * ContainerLightInfusedPouch.LARGE_BAG_INVENTORY_COLUMNS;
         } else {
-            size = ContainerAlchemicalBag.SMALL_BAG_INVENTORY_ROWS * ContainerAlchemicalBag.SMALL_BAG_INVENTORY_COLUMNS;
+            size = ContainerLightInfusedPouch.SMALL_BAG_INVENTORY_ROWS * ContainerLightInfusedPouch.SMALL_BAG_INVENTORY_COLUMNS;
         }
         inventory = new ItemStack[size];
         readFromNBT(itemStack.getTagCompound());
@@ -116,7 +116,7 @@ public class InventoryAlchemicalBag implements IInventory, INBTTaggable {
 
     @Override
     public String getInventoryName() {
-        return this.hasCustomName() ? this.getCustomName() : Names.Containers.ALCHEMICAL_BAG;
+        return this.hasCustomName() ? this.getCustomName() : Names.Containers.LIGHT_INFUSED_POUCH;
     }
 
     @Override
@@ -195,7 +195,7 @@ public class InventoryAlchemicalBag implements IInventory, INBTTaggable {
 
     @Override
     public String getTagLabel() {
-        return "InventoryAlchemicalBag";
+        return "InventoryLightInfusedPouch";
     }
 
     public boolean hasCustomName() {

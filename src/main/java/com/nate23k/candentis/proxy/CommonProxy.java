@@ -5,5 +5,8 @@ package com.nate23k.candentis.proxy;
  */
 public abstract class CommonProxy implements IProxy
 {
+    public void registerProxies()
+    {
 
+    }
 }

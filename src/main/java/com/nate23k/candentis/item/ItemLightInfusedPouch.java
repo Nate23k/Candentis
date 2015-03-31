@@ -25,16 +25,16 @@ import java.util.List;
  * Created on 3/27/2015.
  */
 
-public class ItemAlchemicalBag extends ItemCandentis implements IOwnable
+public class ItemLightInfusedPouch extends ItemCandentis implements IOwnable
 {
-    private static final String[] ALCHEMICAL_BAG_ICONS = {"open", "closed", "symbolTier1", "symbolTier2", "symbolTier3"};
+    private static final String[] LIGHT_INFUSED_POUCH_ICONS = {"open", "closed", "symbolTier1", "symbolTier2", "symbolTier3"};
     @SideOnly(Side.CLIENT)
     private IIcon[] icons;
-    public ItemAlchemicalBag()
+    public ItemLightInfusedPouch()
     {
         super();
         this.setHasSubtypes(true);
-        this.setUnlocalizedName(Names.Items.ALCHEMICAL_BAG);
+        this.setUnlocalizedName(Names.Items.LIGHT_INFUSED_POUCH);
     }
     @Override
     @SideOnly(Side.CLIENT)
@@ -46,10 +46,10 @@ public class ItemAlchemicalBag extends ItemCandentis implements IOwnable
     @SideOnly(Side.CLIENT)
     public void registerIcons(IIconRegister iconRegister)
     {
-        icons = new IIcon[ALCHEMICAL_BAG_ICONS.length];
-        for (int i = 0; i < ALCHEMICAL_BAG_ICONS.length; i++)
+        icons = new IIcon[LIGHT_INFUSED_POUCH_ICONS.length];
+        for (int i = 0; i < LIGHT_INFUSED_POUCH_ICONS.length; i++)
         {
-            icons[i] = iconRegister.registerIcon(Textures.RESOURCE_PREFIX + Names.Items.ALCHEMICAL_BAG + "." + ALCHEMICAL_BAG_ICONS[i]);
+            icons[i] = iconRegister.registerIcon(Textures.RESOURCE_PREFIX + Names.Items.LIGHT_INFUSED_POUCH + "." + LIGHT_INFUSED_POUCH_ICONS[i]);
         }
     }
     @Override
@@ -57,7 +57,7 @@ public class ItemAlchemicalBag extends ItemCandentis implements IOwnable
     {
         if (renderPass == 0)
         {
-            if (NBTHelper.hasTag(itemStack, Names.NBT.ALCHEMICAL_BAG_GUI_OPEN))
+            if (NBTHelper.hasTag(itemStack, Names.NBT.LIGHT_INFUSED_POUCH_GUI_OPEN))
             {
                 return icons[0];
             }
@@ -97,7 +97,7 @@ public class ItemAlchemicalBag extends ItemCandentis implements IOwnable
             }
 // Set a UUID on the Alchemical Bag, if one doesn't exist already
             NBTHelper.setUUID(itemStack);
-            NBTHelper.setBoolean(itemStack, Names.NBT.ALCHEMICAL_BAG_GUI_OPEN, true);
+            NBTHelper.setBoolean(itemStack, Names.NBT.LIGHT_INFUSED_POUCH_GUI_OPEN, true);
             entityPlayer.openGui(Candentis.instance, GUIs.ALCHEMICAL_BAG.ordinal(), entityPlayer.worldObj, (int) entityPlayer.posX, (int) entityPlayer.posY, (int) entityPlayer.posZ);
         }
         return itemStack;
@@ -125,7 +125,7 @@ public class ItemAlchemicalBag extends ItemCandentis implements IOwnable
     {
         if (itemStack != null)
         {
-            if (itemStack.getItem() instanceof ItemAlchemicalBag)
+            if (itemStack.getItem() instanceof ItemLightInfusedPouch)
             {
                 ColorHelper.setColor(itemStack, color);
             }

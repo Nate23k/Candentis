@@ -5,4 +5,5 @@ package com.nate23k.candentis.proxy;
  */
 public interface IProxy
 {
+    public abstract void registerProxies();
 }

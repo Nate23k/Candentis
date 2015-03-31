@@ -1,6 +1,6 @@
 package com.nate23k.candentis.inventory;
 
-import com.nate23k.candentis.item.ItemAlchemicalBag;
+import com.nate23k.candentis.item.ItemLightInfusedPouch;
 import com.nate23k.candentis.reference.Names;
 import com.nate23k.candentis.utility.NBTHelper;
 import net.minecraft.entity.player.EntityPlayer;
@@ -13,7 +13,7 @@ import net.minecraft.item.ItemStack;
  * Created on 3/27/2015.
  */
 
-public class ContainerAlchemicalBag extends ContainerCandentis {
+public class ContainerLightInfusedPouch extends ContainerCandentis {
     // Small Bag
     public static final int SMALL_BAG_INVENTORY_ROWS = 4;
     public static final int SMALL_BAG_INVENTORY_COLUMNS = 12;
@@ -24,54 +24,54 @@ public class ContainerAlchemicalBag extends ContainerCandentis {
     public static final int LARGE_BAG_INVENTORY_ROWS = 9;
     public static final int LARGE_BAG_INVENTORY_COLUMNS = 13;
     private final EntityPlayer entityPlayer;
-    private final InventoryAlchemicalBag inventoryAlchemicalBag;
+    private final InventoryLightInfusedPouch inventoryLightInfusedPouch;
     private int bagInventoryRows;
     private int bagInventoryColumns;
 
-    public ContainerAlchemicalBag(EntityPlayer entityPlayer, InventoryAlchemicalBag inventoryAlchemicalBag) {
+    public ContainerLightInfusedPouch(EntityPlayer entityPlayer, InventoryLightInfusedPouch inventoryLightInfusedPouch) {
         this.entityPlayer = entityPlayer;
-        this.inventoryAlchemicalBag = inventoryAlchemicalBag;
-        if (inventoryAlchemicalBag.parentItemStack.getItemDamage() == 0) {
+        this.inventoryLightInfusedPouch = inventoryLightInfusedPouch;
+        if (inventoryLightInfusedPouch.parentItemStack.getItemDamage() == 0) {
             bagInventoryRows = SMALL_BAG_INVENTORY_ROWS;
             bagInventoryColumns = SMALL_BAG_INVENTORY_COLUMNS;
-        } else if (inventoryAlchemicalBag.parentItemStack.getItemDamage() == 1) {
+        } else if (inventoryLightInfusedPouch.parentItemStack.getItemDamage() == 1) {
             bagInventoryRows = MEDIUM_BAG_INVENTORY_ROWS;
             bagInventoryColumns = MEDIUM_BAG_INVENTORY_COLUMNS;
-        } else if (inventoryAlchemicalBag.parentItemStack.getItemDamage() == 2) {
+        } else if (inventoryLightInfusedPouch.parentItemStack.getItemDamage() == 2) {
             bagInventoryRows = LARGE_BAG_INVENTORY_ROWS;
             bagInventoryColumns = LARGE_BAG_INVENTORY_COLUMNS;
         }
 // Add the Alchemical Chest slots to the container
         for (int bagRowIndex = 0; bagRowIndex < bagInventoryRows; ++bagRowIndex) {
             for (int bagColumnIndex = 0; bagColumnIndex < bagInventoryColumns; ++bagColumnIndex) {
-                if (inventoryAlchemicalBag.parentItemStack.getItemDamage() == 0) {
-                    this.addSlotToContainer(new SlotAlchemicalBag(this, inventoryAlchemicalBag, entityPlayer, bagColumnIndex + bagRowIndex * bagInventoryColumns, 8 + bagColumnIndex * 18, 18 + bagRowIndex * 18));
-                } else if (inventoryAlchemicalBag.parentItemStack.getItemDamage() == 1) {
-                    this.addSlotToContainer(new SlotAlchemicalBag(this, inventoryAlchemicalBag, entityPlayer, bagColumnIndex + bagRowIndex * bagInventoryColumns, 8 + bagColumnIndex * 18, 18 + bagRowIndex * 18));
-                } else if (inventoryAlchemicalBag.parentItemStack.getItemDamage() == 2) {
-                    this.addSlotToContainer(new SlotAlchemicalBag(this, inventoryAlchemicalBag, entityPlayer, bagColumnIndex + bagRowIndex * bagInventoryColumns, 8 + bagColumnIndex * 18, 8 + bagRowIndex * 18));
+                if (inventoryLightInfusedPouch.parentItemStack.getItemDamage() == 0) {
+                    this.addSlotToContainer(new SlotAlchemicalBag(this, inventoryLightInfusedPouch, entityPlayer, bagColumnIndex + bagRowIndex * bagInventoryColumns, 8 + bagColumnIndex * 18, 18 + bagRowIndex * 18));
+                } else if (inventoryLightInfusedPouch.parentItemStack.getItemDamage() == 1) {
+                    this.addSlotToContainer(new SlotAlchemicalBag(this, inventoryLightInfusedPouch, entityPlayer, bagColumnIndex + bagRowIndex * bagInventoryColumns, 8 + bagColumnIndex * 18, 18 + bagRowIndex * 18));
+                } else if (inventoryLightInfusedPouch.parentItemStack.getItemDamage() == 2) {
+                    this.addSlotToContainer(new SlotAlchemicalBag(this, inventoryLightInfusedPouch, entityPlayer, bagColumnIndex + bagRowIndex * bagInventoryColumns, 8 + bagColumnIndex * 18, 8 + bagRowIndex * 18));
                 }
             }
         }
 // Add the player's inventory slots to the container
         for (int inventoryRowIndex = 0; inventoryRowIndex < PLAYER_INVENTORY_ROWS; ++inventoryRowIndex) {
             for (int inventoryColumnIndex = 0; inventoryColumnIndex < PLAYER_INVENTORY_COLUMNS; ++inventoryColumnIndex) {
-                if (inventoryAlchemicalBag.parentItemStack.getItemDamage() == 0) {
+                if (inventoryLightInfusedPouch.parentItemStack.getItemDamage() == 0) {
                     this.addSlotToContainer(new Slot(entityPlayer.inventory, inventoryColumnIndex + inventoryRowIndex * 9 + 9, 35 + inventoryColumnIndex * 18, 104 + inventoryRowIndex * 18));
-                } else if (inventoryAlchemicalBag.parentItemStack.getItemDamage() == 1) {
+                } else if (inventoryLightInfusedPouch.parentItemStack.getItemDamage() == 1) {
                     this.addSlotToContainer(new Slot(entityPlayer.inventory, inventoryColumnIndex + inventoryRowIndex * 9 + 9, 35 + inventoryColumnIndex * 18, 158 + inventoryRowIndex * 18));
-                } else if (inventoryAlchemicalBag.parentItemStack.getItemDamage() == 2) {
+                } else if (inventoryLightInfusedPouch.parentItemStack.getItemDamage() == 2) {
                     this.addSlotToContainer(new Slot(entityPlayer.inventory, inventoryColumnIndex + inventoryRowIndex * 9 + 9, 44 + inventoryColumnIndex * 18, 174 + inventoryRowIndex * 18));
                 }
             }
         }
 // Add the player's action bar slots to the container
         for (int actionBarSlotIndex = 0; actionBarSlotIndex < PLAYER_INVENTORY_COLUMNS; ++actionBarSlotIndex) {
-            if (inventoryAlchemicalBag.parentItemStack.getItemDamage() == 0) {
+            if (inventoryLightInfusedPouch.parentItemStack.getItemDamage() == 0) {
                 this.addSlotToContainer(new Slot(entityPlayer.inventory, actionBarSlotIndex, 35 + actionBarSlotIndex * 18, 162));
-            } else if (inventoryAlchemicalBag.parentItemStack.getItemDamage() == 1) {
+            } else if (inventoryLightInfusedPouch.parentItemStack.getItemDamage() == 1) {
                 this.addSlotToContainer(new Slot(entityPlayer.inventory, actionBarSlotIndex, 35 + actionBarSlotIndex * 18, 216));
-            } else if (inventoryAlchemicalBag.parentItemStack.getItemDamage() == 2) {
+            } else if (inventoryLightInfusedPouch.parentItemStack.getItemDamage() == 2) {
                 this.addSlotToContainer(new Slot(entityPlayer.inventory, actionBarSlotIndex, 44 + actionBarSlotIndex * 18, 232));
             }
         }
@@ -81,12 +81,12 @@ public class ContainerAlchemicalBag extends ContainerCandentis {
     public void onContainerClosed(EntityPlayer entityPlayer) {
         super.onContainerClosed(entityPlayer);
         if (!entityPlayer.worldObj.isRemote) {
-// We can probably do this better now considering the InventoryAlchemicalBag has a findParent method
+// We can probably do this better now considering the InventoryLightInfusedPouch has a findParent method
             InventoryPlayer invPlayer = entityPlayer.inventory;
             for (ItemStack itemStack : invPlayer.mainInventory) {
                 if (itemStack != null) {
-                    if (NBTHelper.hasTag(itemStack, Names.NBT.ALCHEMICAL_BAG_GUI_OPEN)) {
-                        NBTHelper.removeTag(itemStack, Names.NBT.ALCHEMICAL_BAG_GUI_OPEN);
+                    if (NBTHelper.hasTag(itemStack, Names.NBT.LIGHT_INFUSED_POUCH_GUI_OPEN)) {
+                        NBTHelper.removeTag(itemStack, Names.NBT.LIGHT_INFUSED_POUCH_GUI_OPEN);
                     }
                 }
             }
@@ -108,7 +108,7 @@ public class ContainerAlchemicalBag extends ContainerCandentis {
                 }
             }
 // Special case if we are dealing with an Alchemical Bag being shift clicked
-            else if (itemStack.getItem() instanceof ItemAlchemicalBag) {
+            else if (itemStack.getItem() instanceof ItemLightInfusedPouch) {
 // Attempt to shift click a bag from the player inventory into the hot bar inventory
                 if (slotIndex < (bagInventoryRows * bagInventoryColumns) + (PLAYER_INVENTORY_ROWS * PLAYER_INVENTORY_COLUMNS)) {
                     if (!this.mergeItemStack(itemStack, (bagInventoryRows * bagInventoryColumns) + (PLAYER_INVENTORY_ROWS * PLAYER_INVENTORY_COLUMNS), inventorySlots.size(), false)) {
@@ -134,14 +134,14 @@ public class ContainerAlchemicalBag extends ContainerCandentis {
     }
 
     public void saveInventory(EntityPlayer entityPlayer) {
-        inventoryAlchemicalBag.onGuiSaved(entityPlayer);
+        inventoryLightInfusedPouch.onGuiSaved(entityPlayer);
     }
 
     private class SlotAlchemicalBag extends Slot {
         private final EntityPlayer entityPlayer;
-        private ContainerAlchemicalBag containerAlchemicalBag;
+        private ContainerLightInfusedPouch containerAlchemicalBag;
 
-        public SlotAlchemicalBag(ContainerAlchemicalBag containerAlchemicalBag, IInventory inventory, EntityPlayer entityPlayer, int slotIndex, int x, int y) {
+        public SlotAlchemicalBag(ContainerLightInfusedPouch containerAlchemicalBag, IInventory inventory, EntityPlayer entityPlayer, int slotIndex, int x, int y) {
             super(inventory, slotIndex, x, y);
             this.entityPlayer = entityPlayer;
             this.containerAlchemicalBag = containerAlchemicalBag;
@@ -158,7 +158,7 @@ public class ContainerAlchemicalBag extends ContainerCandentis {
          */
         @Override
         public boolean isItemValid(ItemStack itemStack) {
-            return !(itemStack.getItem() instanceof ItemAlchemicalBag);
+            return !(itemStack.getItem() instanceof ItemLightInfusedPouch);
         }
     }
 }

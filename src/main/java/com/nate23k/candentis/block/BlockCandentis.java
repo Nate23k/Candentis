@@ -19,11 +19,6 @@ public class BlockCandentis extends Block
         this.setCreativeTab(CreativeTabCandentis.Candentis_Tab);
     }
 
-    public BlockCandentis()
-    {
-        this(Material.iron);
-    }
-
     @Override
     public String getUnlocalizedName()
     {
