@@ -1,35 +1,47 @@
 package com.nate23k.candentis.machine;
 
+import com.nate23k.candentis.TileEntityCandentis;
 import com.nate23k.candentis.utility.LogHelper;
-import net.minecraft.tileentity.TileEntity;
 
 /**
  * Created on 3/30/2015.
  */
-public class TileEntityLightInfuser extends TileEntity
+
+public class TileEntityLightInfuser extends TileEntityCandentis
 {
     public int maxLight = 10000;
     public float light = 0;
-    public float lightPerTick = 0.1F;
+    public float lightPerTick = 1.0F;
 
+    @Override
     public void updateEntity()
     {
-        if(canSeeSun())
-        {
-            lightPerTick = 5;
+        if(worldObj == null || worldObj.isRemote) {
+            return;
+        }
+        collectLight();
+    }
 
-            light = light + lightPerTick;
+    private void collectLight()
+    {
+        if(canSeeSun() && isDaytime())
+        {
+            light += lightPerTick;
+            light = Math.round(light);
         }
         if(light > maxLight)
         {
             light = maxLight;
         }
-
-        LogHelper.info(light);
     }
 
     boolean canSeeSun()
     {
-        return worldObj.canBlockSeeTheSky(xCoord, yCoord, zCoord);
+        return worldObj.canBlockSeeTheSky(xCoord, yCoord + 1, zCoord);
+    }
+
+    boolean isDaytime()
+    {
+        return worldObj.isDaytime();
     }
 }

@@ -1,5 +1,6 @@
 package com.nate23k.candentis.block;
 
+import com.nate23k.candentis.creativetab.CreativeTabCandentis;
 import net.minecraft.block.BlockContainer;
 import net.minecraft.block.material.Material;
 import net.minecraft.tileentity.TileEntity;
@@ -14,6 +15,7 @@ public class BlockContainerCandentis extends BlockContainer
     protected BlockContainerCandentis(Material material)
     {
         super(material);
+        this.setCreativeTab(CreativeTabCandentis.Candentis_Tab);
     }
 
     @Override

@@ -1,8 +1,8 @@
-[23:51:29] [main/INFO]: Setting user: Player781
-[23:51:30] [Client thread/INFO]: LWJGL Version: 2.9.1
-[23:51:34] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Candentis
-[23:51:35] [Sound Library Loader/INFO]: Sound engine started
-[23:51:36] [Client thread/ERROR]: Using missing texture, unable to load minecraft:textures/blocks/lightInfuser.png
+[02:42:52] [main/INFO]: Setting user: Player46
+[02:42:53] [Client thread/INFO]: LWJGL Version: 2.9.1
+[02:42:58] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Candentis
+[02:42:59] [Sound Library Loader/INFO]: Sound engine started
+[02:43:00] [Client thread/ERROR]: Using missing texture, unable to load minecraft:textures/blocks/lightInfuser.png
 java.io.FileNotFoundException: minecraft:textures/blocks/lightInfuser.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -27,11 +27,11 @@ java.io.FileNotFoundException: minecraft:textures/blocks/lightInfuser.png
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_75]
 	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_75]
 	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:140) [idea_rt.jar:?]
-[23:51:36] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[23:51:37] [Client thread/INFO]: Created: 256x256 textures/items-atlas
-[23:51:37] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Candentis
-[23:51:37] [Client thread/INFO]: Created: 256x256 textures/items-atlas
-[23:51:37] [Client thread/ERROR]: Using missing texture, unable to load minecraft:textures/blocks/lightInfuser.png
+[02:43:00] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[02:43:00] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[02:43:00] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Candentis
+[02:43:00] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[02:43:00] [Client thread/ERROR]: Using missing texture, unable to load minecraft:textures/blocks/lightInfuser.png
 java.io.FileNotFoundException: minecraft:textures/blocks/lightInfuser.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -59,22 +59,22 @@ java.io.FileNotFoundException: minecraft:textures/blocks/lightInfuser.png
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_75]
 	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_75]
 	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:140) [idea_rt.jar:?]
-[23:51:37] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[23:51:38] [Sound Library Loader/INFO]: Sound engine started
-[23:51:41] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[23:51:41] [Server thread/INFO]: Generating keypair
-[23:51:42] [Server thread/INFO]: Preparing start region for level 0
-[23:51:42] [Server thread/INFO]: Changing view distance to 9, from 10
-[23:51:43] [Server thread/INFO]: Player781[local:E:53a1ab52] logged in with entity id 125 at (206.26564907014253, 56.0, 2178.466569557303)
-[23:51:43] [Server thread/INFO]: Player781 joined the game
-[23:51:54] [Server thread/INFO]: Saving and pausing game...
-[23:51:54] [Server thread/INFO]: Saving chunks for level 'Test'/Overworld
-[23:51:54] [Server thread/INFO]: Saving chunks for level 'Test'/Nether
-[23:51:54] [Server thread/INFO]: Saving chunks for level 'Test'/The End
-[23:51:55] [Server thread/INFO]: Stopping server
-[23:51:55] [Server thread/INFO]: Saving players
-[23:51:55] [Server thread/INFO]: Saving worlds
-[23:51:55] [Server thread/INFO]: Saving chunks for level 'Test'/Overworld
-[23:51:55] [Server thread/INFO]: Saving chunks for level 'Test'/Nether
-[23:51:55] [Server thread/INFO]: Saving chunks for level 'Test'/The End
-[23:51:56] [Client thread/INFO]: Stopping!
+[02:43:00] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[02:43:01] [Sound Library Loader/INFO]: Sound engine started
+[02:43:04] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[02:43:04] [Server thread/INFO]: Generating keypair
+[02:43:05] [Server thread/INFO]: Preparing start region for level 0
+[02:43:06] [Server thread/INFO]: Changing view distance to 9, from 10
+[02:43:06] [Server thread/INFO]: Player46[local:E:82320ed5] logged in with entity id 124 at (212.72428263529594, 56.0, 2145.4818925062405)
+[02:43:06] [Server thread/INFO]: Player46 joined the game
+[02:44:30] [Server thread/INFO]: Saving and pausing game...
+[02:44:30] [Server thread/INFO]: Saving chunks for level 'Test'/Overworld
+[02:44:30] [Server thread/INFO]: Saving chunks for level 'Test'/Nether
+[02:44:30] [Server thread/INFO]: Saving chunks for level 'Test'/The End
+[02:44:31] [Server thread/INFO]: Stopping server
+[02:44:31] [Server thread/INFO]: Saving players
+[02:44:31] [Server thread/INFO]: Saving worlds
+[02:44:31] [Server thread/INFO]: Saving chunks for level 'Test'/Overworld
+[02:44:31] [Server thread/INFO]: Saving chunks for level 'Test'/Nether
+[02:44:31] [Server thread/INFO]: Saving chunks for level 'Test'/The End
+[02:44:32] [Client thread/INFO]: Stopping!
