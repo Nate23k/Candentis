@@ -180,6 +180,12 @@
         <w>resync</w>
       </words>
     </dictionary>
+    <dictionary name="Nathan">
+      <words>
+        <w>enchantability</w>
+        <w>scaler</w>
+      </words>
+    </dictionary>
   </component>
   <component name="ProjectModuleManager">
     <modules>

@@ -1,6 +1,6 @@
 package com.nate23k.candentis.inventory;
 
-import com.nate23k.candentis.item.ItemLightInfusedPouch;
+import com.nate23k.candentis.item.bags.ItemLightInfusedPouch;
 import com.nate23k.candentis.reference.Names;
 import com.nate23k.candentis.utility.NBTHelper;
 import net.minecraft.entity.player.EntityPlayer;

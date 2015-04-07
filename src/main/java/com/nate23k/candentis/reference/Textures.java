@@ -17,5 +17,6 @@ public final class Textures
         public static final ResourceLocation LIGHT_INFUSED_POUCH_SMALL = ResourceLocationHelper.getResourceLocation(GUI_TEXTURE_LOCATION + "lightInfusedPouch_small.png");
         public static final ResourceLocation LIGHT_INFUSED_POUCH_MEDIUM = ResourceLocationHelper.getResourceLocation(GUI_TEXTURE_LOCATION + "lightInfusedPouch_medium.png");
         public static final ResourceLocation LIGHT_INFUSED_POUCH_LARGE = ResourceLocationHelper.getResourceLocation(GUI_TEXTURE_LOCATION + "lightInfusedPouch_large.png");
+        public static final ResourceLocation LIGHT_INFUSER = ResourceLocationHelper.getResourceLocation(GUI_TEXTURE_LOCATION + "lightInfuser.png");
     }
 }

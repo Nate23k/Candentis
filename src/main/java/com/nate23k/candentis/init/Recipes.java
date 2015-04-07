@@ -8,6 +8,7 @@ import net.minecraft.item.ItemStack;
 /**
  * Created on 3/26/2015.
  */
+
 public class Recipes
 {
     public static void init()
@@ -19,6 +20,15 @@ public class Recipes
 
         // Pickaxes
         GameRegistry.addRecipe(new ItemStack(ModItems.lightInfusedIronPickaxe), "iii", " s ", " s ", 'i', new ItemStack(ModItems.lightInfusedIronIngot), 's', new ItemStack(Items.stick));
+
+        // Spades
+        GameRegistry.addRecipe(new ItemStack(ModItems.lightInfusedIronSpade), " i ", " s ", " s ", 'i', new ItemStack(ModItems.lightInfusedIronIngot), 's', new ItemStack(Items.stick));
+        GameRegistry.addRecipe(new ItemStack(ModItems.lightInfusedIronSpade), "i  ", "s  ", "s  ", 'i', new ItemStack(ModItems.lightInfusedIronIngot), 's', new ItemStack(Items.stick));
+        GameRegistry.addRecipe(new ItemStack(ModItems.lightInfusedIronSpade), "  i", "  s", "  s", 'i', new ItemStack(ModItems.lightInfusedIronIngot), 's', new ItemStack(Items.stick));
+
+        // Axes
+        GameRegistry.addRecipe(new ItemStack(ModItems.lightInfusedIronAxe), "ii ", "is ", " s ", 'i', new ItemStack(ModItems.lightInfusedIronIngot), 's', new ItemStack(Items.stick));
+        GameRegistry.addRecipe(new ItemStack(ModItems.lightInfusedIronAxe), " ii", " si", " s ", 'i', new ItemStack(ModItems.lightInfusedIronIngot), 's', new ItemStack(Items.stick));
 
         // Light Infused Blocks
         GameRegistry.addRecipe(new ItemStack(ModBlocks.lightInfusedIronBlock), "iii", "iii", "iii", 'i', new ItemStack(ModItems.lightInfusedIronIngot));

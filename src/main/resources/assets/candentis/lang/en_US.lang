@@ -1,8 +1,18 @@
 #items
+item.candentis:lightInfusedDiamondSword.name=Light Infused Diamond Sword
+item.candentis:lightInfusedDiamondShovel.name=Light Infused Diamond Shovel
+item.candentis:lightInfusedDiamondPickaxe.name=Light Infused Diamond Pickaxe
+item.candentis:lightInfusedDiamondAxe.name=Light Infused Diamond Axe
+item.candentis:lightInfusedIronShovel.name=Light Infused Iron Shovel
+item.candentis:lightInfusedIronAxe.name=Light Infused Iron Axe
+item.candentis:lightInfusedDiamond.name=Light Infused Diamond
+item.candentis:lightInfusedGoldIngot.name=Light Infused Gold Ingot
 item.candentis:lightInfusedIronIngot.name=Light Infused Iron Ingot
 item.candentis:lightInfusedIronSword.name=Light Infused Iron Sword
 item.candentis:lightInfusedIronPickaxe.name=Light Infused Iron Pickaxe
 
 #blocks
 tile.candentis:lightInfusedIronBlock.name=Light Infused Iron Block
+
+#creativetab
 itemGroup.candentis=Candentis

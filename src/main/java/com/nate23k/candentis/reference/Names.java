@@ -3,10 +3,37 @@ package com.nate23k.candentis.reference;
 /**
  * Created on 3/27/2015.
  */
+
 public class Names
 {
+    public static final class Tools
+    {
+        // List of Pickaxes
+        public static final String LIGHT_INFUSED_IRON_PICKAXE = "lightInfusedIronPickaxe";
+        public static final String LIGHT_INFUSED_DIAMOND_PICKAXE = "lightInfusedDiamondPickaxe";
+
+        // List of Shovels
+        public static final String LIGHT_INFUSED_IRON_SHOVEL = "lightInfusedIronShovel";
+        public static final String LIGHT_INFUSED_DIAMOND_SHOVEL = "lightInfusedDiamondShovel";
+
+        // List of Swords
+        public static final String LIGHT_INFUSED_IRON_SWORD = "lightInfusedIronSword";
+        public static final String LIGHT_INFUSED_DIAMOND_SWORD = "lightInfusedDiamondSword";
+
+        // List of Axes
+        public static final String LIGHT_INFUSED_IRON_AXE = "lightInfusedIronAxe";
+        public static final String LIGHT_INFUSED_DIAMOND_AXE = "lightInfusedDiamondAxe";
+    }
     public static final class Items
     {
+        // List of Metals
+        public static final String LIGHT_INFUSED_GOLD_INGOT = "lightInfusedGoldIngot";
+        public static final String LIGHT_INFUSED_IRON_INGOT = "lightInfusedIronIngot";
+
+        // List of Shiny Things
+        public static final String LIGHT_INFUSED_DIAMOND = "lightInfusedDiamond";
+
+        // List of Bags
         public static final String LIGHT_INFUSED_POUCH = "lightInfusedPouch";
     }
 
