@@ -6,6 +6,7 @@ import com.nate23k.candentis.reference.Names;
 /**
  * Created on 4/4/2015.
  */
+
 public class ItemLightInfusedDiamondSword extends ItemCandentisSword
 {
     public ItemLightInfusedDiamondSword(ToolMaterial material)

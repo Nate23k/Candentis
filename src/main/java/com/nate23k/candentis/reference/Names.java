@@ -19,6 +19,7 @@ public class Names
         // List of Swords
         public static final String LIGHT_INFUSED_IRON_SWORD = "lightInfusedIronSword";
         public static final String LIGHT_INFUSED_DIAMOND_SWORD = "lightInfusedDiamondSword";
+        public static final String KAYLES_SWORD = "kaylesSword";
 
         // List of Axes
         public static final String LIGHT_INFUSED_IRON_AXE = "lightInfusedIronAxe";

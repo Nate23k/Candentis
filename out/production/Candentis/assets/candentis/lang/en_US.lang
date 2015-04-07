@@ -1,6 +1,7 @@
 #items
-item.candentis:lightInfusedDiamondShovel=Light Infused Diamond Shovel
-item.candentis:lightInfusedDiamondPickaxe=Light Infused Diamond Pickaxe
+item.candentis:lightInfusedDiamondSword.name=Light Infused Diamond Sword
+item.candentis:lightInfusedDiamondShovel.name=Light Infused Diamond Shovel
+item.candentis:lightInfusedDiamondPickaxe.name=Light Infused Diamond Pickaxe
 item.candentis:lightInfusedDiamondAxe.name=Light Infused Diamond Axe
 item.candentis:lightInfusedIronShovel.name=Light Infused Iron Shovel
 item.candentis:lightInfusedIronAxe.name=Light Infused Iron Axe

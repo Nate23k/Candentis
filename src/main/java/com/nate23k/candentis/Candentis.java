@@ -10,6 +10,7 @@ import com.nate23k.candentis.init.ModBlocks;
 import com.nate23k.candentis.init.ModItems;
 import com.nate23k.candentis.init.ModTileEntity;
 import com.nate23k.candentis.init.Recipes;
+import com.nate23k.candentis.item.tools.swords.ItemKaylesSword;
 import com.nate23k.candentis.proxy.IProxy;
 import com.nate23k.candentis.reference.Reference;
 import com.nate23k.candentis.utility.LogHelper;
