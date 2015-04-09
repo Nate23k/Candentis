@@ -2,10 +2,20 @@ package com.nate23k.candentis.machine;
 
 import com.nate23k.candentis.TileEntityCandentis;
 import com.nate23k.candentis.utility.LogHelper;
+import com.nate23k.candentis.utility.NBTHelper;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.inventory.ISidedInventory;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
+import net.minecraft.network.NetworkManager;
+import net.minecraft.network.Packet;
+import net.minecraft.network.play.server.S35PacketUpdateTileEntity;
+import net.minecraft.util.ChunkCoordinates;
+import net.minecraft.util.IChatComponent;
+import scala.annotation.meta.param;
 
 /**
  * Created on 3/30/2015.
@@ -20,9 +30,13 @@ public class TileEntityLightInfuser extends TileEntityCandentis implements ISide
     @Override
     public void updateEntity()
     {
-        if(worldObj == null || worldObj.isRemote) {
+        if(worldObj == null || worldObj.isRemote) // Forces the client to not update the entity.
+        {
             return;
         }
+
+        markForUpdate();
+
         collectLight();
 
         LogHelper.warn(returnLight());
@@ -61,14 +75,31 @@ public class TileEntityLightInfuser extends TileEntityCandentis implements ISide
         return worldObj.isDaytime();
     }
 
+    @Override
     public void readFromNBT(NBTTagCompound nbt)
     {
+        super.readFromNBT(nbt);
+        this.light = nbt.getFloat("light");
+    }
+
+    @Override
+    public void writeToNBT(NBTTagCompound nbt)
+    {
+        super.writeToNBT(nbt);
+        nbt.setFloat("light", light);
 
     }
 
-    public void writeToNBT(NBTTagCompound nbt)
-    {
+    @Override
+    public Packet getDescriptionPacket() {
+        NBTTagCompound tag = new NBTTagCompound();
+        writeToNBT(tag);
+        return new S35PacketUpdateTileEntity(xCoord, yCoord, zCoord, 0, tag);
+    }
 
+    @Override
+    public void onDataPacket(NetworkManager net, S35PacketUpdateTileEntity pkt) {
+        readFromNBT(pkt.func_148857_g());
     }
 
     @Override

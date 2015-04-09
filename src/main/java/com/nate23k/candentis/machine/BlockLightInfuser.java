@@ -2,10 +2,15 @@ package com.nate23k.candentis.machine;
 
 import com.nate23k.candentis.Candentis;
 import com.nate23k.candentis.block.BlockContainerCandentis;
+import com.nate23k.candentis.network.MessageTileEntityLightInfuser;
+import com.nate23k.candentis.network.PacketHandler;
 import com.nate23k.candentis.reference.GUIs;
+import com.nate23k.candentis.utility.LogHelper;
 import cpw.mods.fml.common.network.internal.FMLNetworkHandler;
+import cpw.mods.fml.common.network.simpleimpl.IMessage;
 import net.minecraft.block.material.Material;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.world.World;
 

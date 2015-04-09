@@ -17,9 +17,10 @@ import net.minecraft.entity.player.InventoryPlayer;
 @SideOnly(Side.CLIENT)
 public class GuiLightInfuser extends GuiContainer
 {
-    TileEntityLightInfuser tileEntityLightInfuser = new TileEntityLightInfuser();
+    TileEntityLightInfuser tileEntityLightInfuser;
 
-    public GuiLightInfuser(InventoryPlayer inventoryPlayer, TileEntityLightInfuser tileEntityLightInfuser){
+    public GuiLightInfuser(InventoryPlayer inventoryPlayer, TileEntityLightInfuser tileEntityLightInfuser)
+    {
         super(new ContainerLightInfuser(inventoryPlayer, tileEntityLightInfuser));
 
         this.tileEntityLightInfuser = tileEntityLightInfuser;
@@ -35,7 +36,7 @@ public class GuiLightInfuser extends GuiContainer
         drawTexturedModalRect(guiLeft, guiTop, 0, 0, xSize, ySize);
 
         int i = tileEntityLightInfuser.getLightScaled(45);
-        drawTexturedModalRect(guiLeft + 135, guiTop + 17 + i, 176, 0, 12, 45);
+        drawTexturedModalRect(guiLeft + 135, guiTop + 17 + 45 - i, 176, 45-i, 12, i);
 
         LogHelper.info(this.tileEntityLightInfuser.light);
     }

@@ -1,0 +1,107 @@
+---- Minecraft Crash Report ----
+// Why is it breaking :(
+
+Time: 4/8/15 11:48 PM
+Description: Unexpected error
+
+java.lang.NullPointerException: Unexpected error
+	at com.nate23k.candentis.TileEntityCandentis.markForUpdate(TileEntityCandentis.java:13)
+	at com.nate23k.candentis.machine.BlockLightInfuser.onBlockActivated(BlockLightInfuser.java:38)
+	at net.minecraft.client.multiplayer.PlayerControllerMP.onPlayerRightClick(PlayerControllerMP.java:376)
+	at net.minecraft.client.Minecraft.func_147121_ag(Minecraft.java:1518)
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:2033)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1028)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:951)
+	at net.minecraft.client.main.Main.main(Main.java:164)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source)
+	at GradleStart.main(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at com.nate23k.candentis.TileEntityCandentis.markForUpdate(TileEntityCandentis.java:13)
+	at com.nate23k.candentis.machine.BlockLightInfuser.onBlockActivated(BlockLightInfuser.java:38)
+	at net.minecraft.client.multiplayer.PlayerControllerMP.onPlayerRightClick(PlayerControllerMP.java:376)
+	at net.minecraft.client.Minecraft.func_147121_ag(Minecraft.java:1518)
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 1 total; [EntityClientPlayerMP['Player100'/109, l='MpServer', x=1094.11, y=5.62, z=572.45]]
+	Chunk stats: MultiplayerChunkCache: 351, 351
+	Level seed: 0
+	Level generator: ID 01 - flat, ver 0. Features enabled: false
+	Level generator options: 
+	Level spawn location: World: (1068,4,661), Chunk: (at 12,0,5 in 66,41; contains blocks 1056,0,656 to 1071,255,671), Region: (2,1; contains chunks 64,32 to 95,63, blocks 1024,0,512 to 1535,255,1023)
+	Level time: 46704 game time, 8537 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: false
+	Forced entities: 27 total; [EntityHorse['Horse'/64, l='MpServer', x=1024.81, y=4.00, z=548.63], EntityCow['Cow'/65, l='MpServer', x=1039.22, y=4.00, z=640.69], EntityChicken['Chicken'/77, l='MpServer', x=1049.41, y=4.00, z=502.34], EntityHorse['Horse'/78, l='MpServer', x=1040.34, y=4.00, z=511.94], EntityChicken['Chicken'/79, l='MpServer', x=1050.47, y=4.00, z=515.56], EntityItem['item.item.beefRaw'/85, l='MpServer', x=1073.81, y=4.13, z=603.16], EntityXPOrb['Experience Orb'/87, l='MpServer', x=1076.03, y=4.25, z=606.56], EntityXPOrb['Experience Orb'/86, l='MpServer', x=1074.31, y=4.25, z=603.16], EntityPig['Pig'/81, l='MpServer', x=1052.09, y=4.00, z=645.97], EntityCow['Cow'/80, l='MpServer', x=1050.75, y=4.00, z=626.78], EntityCow['Cow'/82, l='MpServer', x=1041.69, y=4.00, z=640.75], EntityChicken['Chicken'/93, l='MpServer', x=1127.59, y=4.00, z=635.59], EntityChicken['Chicken'/92, l='MpServer', x=1121.47, y=4.00, z=571.63], EntityPig['Pig'/94, l='MpServer', x=1132.75, y=4.00, z=646.41], EntityChicken['Chicken'/89, l='MpServer', x=1107.47, y=4.00, z=630.53], EntityItem['item.item.beefRaw'/88, l='MpServer', x=1100.97, y=4.13, z=577.75], EntityChicken['Chicken'/102, l='MpServer', x=1167.53, y=4.00, z=607.84], EntityCow['Cow'/103, l='MpServer', x=1155.19, y=4.00, z=644.84], EntityPig['Pig'/100, l='MpServer', x=1148.63, y=4.00, z=621.81], EntityCow['Cow'/101, l='MpServer', x=1157.63, y=4.00, z=598.28], EntityChicken['Chicken'/98, l='MpServer', x=1137.53, y=4.00, z=596.47], EntityCow['Cow'/99, l='MpServer', x=1146.06, y=4.00, z=609.97], EntityChicken['Chicken'/107, l='MpServer', x=1173.44, y=4.00, z=636.41], EntityChicken['Chicken'/104, l='MpServer', x=1158.53, y=4.00, z=641.59], EntityHorse['Horse'/49, l='MpServer', x=1016.66, y=4.00, z=552.19], EntityClientPlayerMP['Player100'/109, l='MpServer', x=1094.11, y=5.62, z=572.45], EntityHorse['Horse'/63, l='MpServer', x=1037.03, y=4.00, z=524.13]]
+	Retry entities: 0 total; []
+	Server brand: fml,forge
+	Server type: Integrated singleplayer server
+Stacktrace:
+	at net.minecraft.client.multiplayer.WorldClient.addWorldInfoToCrashReport(WorldClient.java:415)
+	at net.minecraft.client.Minecraft.addGraphicsAndWorldToCrashReport(Minecraft.java:2555)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:980)
+	at net.minecraft.client.main.Main.main(Main.java:164)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source)
+	at GradleStart.main(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.7.10
+	Operating System: Windows 7 (amd64) version 6.1
+	Java Version: 1.7.0_75, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 826158584 bytes (787 MB) / 1037959168 bytes (989 MB) up to 1037959168 bytes (989 MB)
+	JVM Flags: 3 total; -Xincgc -Xmx1024M -Xms1024M
+	AABB Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP v9.05 FML v7.10.85.1291 Minecraft Forge 10.13.2.1291 4 mods loaded, 4 mods active
+	mcp{9.05} [Minecraft Coder Pack] (minecraft.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	FML{7.10.85.1291} [Forge Mod Loader] (forgeSrc-1.7.10-10.13.2.1291.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	Forge{10.13.2.1291} [Minecraft Forge] (forgeSrc-1.7.10-10.13.2.1291.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	Candentis{1.7.10-1.0} [Candentis] (Candentis) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	Launched Version: 1.7.10
+	LWJGL: 2.9.1
+	OpenGL: AMD Radeon HD 7900 Series GL version 4.4.13283 Compatibility Profile Context 14.501.1003.0, ATI Technologies Inc.
+	GL Caps: Using GL 1.3 multitexturing.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Anisotropic filtering is supported and maximum anisotropy is 16.
+Shaders are available because OpenGL 2.1 is supported.
+
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
+	Type: Client (map_client.txt)
+	Resource Packs: []
+	Current Language: English (US)
+	Profiler Position: N/A (disabled)
+	Vec3 Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	Anisotropic Filtering: Off (1)

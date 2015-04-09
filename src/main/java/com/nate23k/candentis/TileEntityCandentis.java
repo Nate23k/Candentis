@@ -8,5 +8,8 @@ import net.minecraft.tileentity.TileEntity;
 
 public class TileEntityCandentis extends TileEntity
 {
-
+    public void markForUpdate()
+    {
+        worldObj.markBlockForUpdate(xCoord, yCoord, zCoord);
+    }
 }

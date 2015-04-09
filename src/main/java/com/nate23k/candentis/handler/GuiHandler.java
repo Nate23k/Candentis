@@ -21,6 +21,7 @@ public class GuiHandler implements IGuiHandler
     public Object getServerGuiElement(int id, EntityPlayer entityPlayer, World world, int x, int y, int z)
     {
         TileEntity tileEntity = world.getTileEntity(x, y, z);
+
         switch(id)
         {
             default: return null;
@@ -49,8 +50,7 @@ public class GuiHandler implements IGuiHandler
                 if(tileEntity instanceof TileEntityLightInfuser)
                 {
                     return new GuiLightInfuser(entityPlayer.inventory, (TileEntityLightInfuser)tileEntity);
-                }else
-                {
+                }else{
                     return null;
                 }
         }

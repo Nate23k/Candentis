@@ -11,6 +11,7 @@ import com.nate23k.candentis.init.ModItems;
 import com.nate23k.candentis.init.ModTileEntity;
 import com.nate23k.candentis.init.Recipes;
 import com.nate23k.candentis.item.tools.swords.ItemKaylesSword;
+import com.nate23k.candentis.network.PacketHandler;
 import com.nate23k.candentis.proxy.IProxy;
 import com.nate23k.candentis.reference.Reference;
 import com.nate23k.candentis.utility.LogHelper;
@@ -41,7 +42,7 @@ public class Candentis
         ModItems.init();
 
         ModBlocks.init();
-
+        PacketHandler.init();
         LogHelper.info("Pre Initialization Complete!");
     }
 
@@ -49,6 +50,8 @@ public class Candentis
     public void init(FMLInitializationEvent event)
     {
         NetworkRegistry.INSTANCE.registerGuiHandler(instance, new GuiHandler());
+
+
 
         Recipes.init();
 

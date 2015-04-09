@@ -29,7 +29,7 @@ public class ModItems
     public static Item.ToolMaterial LIGHT_INFUSED_IRON = EnumHelper.addToolMaterial("LIGHT_INFUSED_IRON", 3, 500, 14.0F, 5.0F, 13);
     public static Item.ToolMaterial LIGHT_INFUSED_GOLD = EnumHelper.addToolMaterial("LIGHT_INFUSED_GOLD", 3, 100, 18.0F, 6.0F, 15);
     public static Item.ToolMaterial LIGHT_INFUSED_DIAMOND = EnumHelper.addToolMaterial("LIGHT_INFUSED_DIAMOND", 5, 800, 17.0F, 7.0F, 14);
-    public static Item.ToolMaterial KAYLES_SWORD = EnumHelper.addToolMaterial("KAYLES_SWORD", 1, 2000, 1.0F, 12.0F, 20);
+    public static Item.ToolMaterial KAYLES_SWORD = EnumHelper.addToolMaterial("KAYLES_SWORD", 1, 2000, 1.0F, 12.0F, 20); // Change to end game values
 
     // List of Shiny Things
     public static final ItemCandentis lightInfusedDiamond = new ItemLightInfusedDiamond();
